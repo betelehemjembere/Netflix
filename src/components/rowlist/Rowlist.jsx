@@ -1,7 +1,8 @@
 import React from 'react';
 import Row from '../row/Row';
 
-const API_KEY = import.meta.env.VITE_API_KEY // The API key for the movie database
+// const API_KEY = import.meta.env.VITE_API_KEY // The API key for the movie database
+const API_KEY ='fd1630c77043838a7e505bba93a8b232'
 const BASE_URL = 'https://api.themoviedb.org/3';  // The base URL for all categories of movies
 
 // Request object containing different types of movies 

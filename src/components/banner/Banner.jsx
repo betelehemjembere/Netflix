@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './banner.css'
 
-const API_KEY =import.meta.env.VITE_API_KEY; //this key is the api key of the movie database
+// const API_KEY =import.meta.env.VITE_API_KEY; //this key is the api key of the movie database
+const API_KEY ='fd1630c77043838a7e505bba93a8b232'
 const BASE_URL = 'https://api.themoviedb.org/3';  //this base url is the common url for all catagories of movies 
 
 //request is an object containing different types of movies 
