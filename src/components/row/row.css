@@ -1,0 +1,54 @@
+.row {
+    position: relative;
+    z-index: 2; /* Ensure rows are on top */
+    margin-top: 20px; /* Space from elements above */
+    padding-left: 20px; /* Space from the left side */
+    color: white;
+  }
+  
+  .title {
+    font-size: 1.5rem; /*  font size */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  .row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px 0; /* Padding at the top and bottom */
+  }
+  
+  .row__posters::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+  
+  .row__poster {
+    max-height: 300px; /*  max height of posters */
+    object-fit: cover; /* Ensure images cover the container */
+    margin-right: 10px; /* Space between posters */
+    transition: transform 450ms;
+  }
+  
+  .row__poster:hover {
+    transform: scale(1.08); /* Enlarge poster on hover */
+    opacity: 1; /* Ensure full opacity */
+  }
+  
+  .movie-trailer {
+    position: relative;
+    width: 100vw;  /* Full width of the viewport */
+    left: 0;
+    margin: 0 auto;
+    padding: 20px 0;  /* Optional padding for spacing */
+    background-color: rgba(0, 0, 0, 0.85);  /* Dark background to separate the trailer from the rows */
+    z-index: 1;
+  }
+  
+  .youtube-video {
+    width: 100%;  /* Make the YouTube iframe take full width */
+    height: 400px;  /* Adjust the height as per your design */
+    margin: 0 auto;
+    display: block;
+  }
+  
